@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Products Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Game Products Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#discord">Discord</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle">Toggle Theme</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Your Gateway to Premium Game Downloads</h2>
+      <p>Discover, purchase, and play — all in one place.</p>
+    </div>
+  </section>
+
+  <section id="categories" class="categories">
+    <div class="container">
+      <h3>Browse Categories</h3>
+      <div class="category-grid">
+        <div class="category">Action</div>
+        <div class="category">Adventure</div>
+        <div class="category">Simulation</div>
+        <div class="category">Indie</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="discord" class="discord">
+    <div class="container">
+      <h3>Join Our Community</h3>
+      <iframe src="https://discord.com/widget?id=YOUR_SERVER_ID&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Game Products Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+    });
+  </script>
+</body>
+</html>
